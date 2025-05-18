@@ -5,7 +5,7 @@ import type { Marker, MapBounds } from './types'
 import './App.css'
 
 // Set worker path for react-pdf
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@4.8.69/build/pdf.worker.min.mjs`;
 
 function App() {
   const [pdfFile, setPdfFile] = useState<File | null>(null)
